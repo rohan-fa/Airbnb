@@ -24,7 +24,8 @@ npm run dev
 
  # 03 
  `page.tsx` => 
- `global.tsx` => ```
+ `global.tsx` => 
+ ```
  html,
 body,
 :root {

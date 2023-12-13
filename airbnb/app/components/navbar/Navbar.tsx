@@ -1,4 +1,4 @@
-import Container from '../Container'
+import Container from '../Container';
 
 
 const Navbar = () => {
@@ -9,13 +9,18 @@ const Navbar = () => {
                 py-4
                 border-b-[1px]
                 "
-            
             >
                 <Container>
-
+                    <div
+                    className='
+                    flex
+                    flex-row
+                    '
+                    >
+                        
+                    </div> 
                 </Container>
             </div>
-            I am Navbar
         </div>
     );
 }

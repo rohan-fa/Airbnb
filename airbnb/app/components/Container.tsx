@@ -1,3 +1,5 @@
+'use client';
+
 interface ContainerProps { 
     children: React.ReactNode;  //now we can assign this props to this element 
 }
@@ -5,7 +7,16 @@ interface ContainerProps {
 //Now we can assign this props to this element
 const Container: React.FC<ContainerProps> = ({children}) => {
     return (
-        <div>
+        <div
+            className="
+            max-w-[2520px]
+            mx-auto
+            xl:px-20
+            md:px-
+            sm:px-2
+            px-4
+            "
+        >
             {children}
         </div>
     );

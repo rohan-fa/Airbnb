@@ -2,6 +2,7 @@
 
 import { IoMdClose } from 'react-icons/io';
 import { useCallback, useEffect, useState } from "react";
+import Button from '../Button';
 
 interface ModalProps {
     isOpen?: boolean;
@@ -139,7 +140,6 @@ const Modal: React.FC<ModalProps> = ({
                             "
                         >
                             <button
-                                onClick={handleClose}
                                 className="
                                     p-1
                                     border-0 
@@ -148,30 +148,33 @@ const Modal: React.FC<ModalProps> = ({
                                     absolute
                                     left-9
                                     "
+                                    onClick={handleClose}
                             >
                                 <IoMdClose size={18} />
                             </button>
-                            <div
-                            className="text-lg font-semibold">
-                                {title}
+                            <div className="text-lg font-semibold">
+                            {title}
                             </div>
                         </div>
-                        {/* BODY */}
-                        <div className='relative p-6 flex-auto'></div>
-                        {body}
-                    </div>
-                    {/* FOOTER */}
-                    <div className='flex flex-col gap-2 p-6'></div>
-                    <div
-                    className='
-                        flex 
-                        flex-row 
-                        items-center 
-                        gap-4 
-                        w-full
-                        '
+                        {/*body*/}
+                        <div className="relative p-6 flex-auto">
+                            {body}
+                        </div>
+                        {/*footer*/}
+                        <div className="flex flex-col gap-2 p-6">
+                            <div 
+                            className="
+                                flex 
+                                flex-row 
+                                items-center 
+                                gap-4 
+                                w-full
+                            "
                     >
-                        <Button />
+                            <Button label="HIIISNciusa" />
+                                </div>
+                            <div/>
+                        </div>
                     </div>
                 </div>
             </div>

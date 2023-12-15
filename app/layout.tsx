@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         <Navbar />
-        <Modal isOpen/>    {/* temporarily here Modal, we will replace this with actual login, rent and search modals */}
+        <Modal title='hello world' isOpen/>    {/* temporarily here Modal, we will replace this with actual login, rent and search modals */}
         {children}
       </body>
     </html>

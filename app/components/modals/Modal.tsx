@@ -24,7 +24,7 @@ const Modal: React.FC<ModalProps> = ({
     title, 
     body, 
     actionLabel, 
-    footer, 
+    footer,  
     disabled,
     secondaryAction,
     secondaryActionLabel
@@ -171,7 +171,20 @@ const Modal: React.FC<ModalProps> = ({
                                 w-full
                             "
                     >
-                            <Button label="HIIISNciusa" />
+                        {secondaryAction && secondaryActionLabel && (
+                            <Button
+                               outline 
+                               disabled={disabled}
+                               label={secondaryActionLabel}
+                               onClick={handleSecondaryAction}
+                           />
+                        )}
+                        {/*This is our primary button it will take this action props*/}
+                        <Button 
+                            disabled={disabled}
+                            label={actionLabel}
+                            onClick={handleSubmit}
+                        />
                                 </div>
                             <div/>
                         </div>
